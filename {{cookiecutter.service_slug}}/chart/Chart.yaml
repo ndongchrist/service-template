@@ -1,0 +1,6 @@
+apiVersion: v2
+name: {{ cookiecutter.service_slug }}
+description: Helm chart for {{ cookiecutter.service_slug }}
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

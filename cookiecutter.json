@@ -1,0 +1,13 @@
+{
+  "service_name": "sample",
+  "service_slug": "{{ cookiecutter.service_name|lower|replace('_', '-') }}-service",
+  "app_name": "{{ cookiecutter.service_name|lower|replace('-', '_') }}",
+  "service_description": "A Django REST Framework microservice",
+  "python_version": "3.12",
+  "django_version": "5.1.4",
+  "http_port": "8000",
+  "_copy_without_render": [
+    "chart/templates/*",
+    ".github/workflows/*"
+  ]
+}
