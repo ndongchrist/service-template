@@ -89,6 +89,13 @@ relay:
   enabled: false
   replicaCount: 1
 
+# Kafka consumer Deployments (Phase 5). Each entry → one Deployment.
+#   consumers:
+#     - name: catalog-consumer
+#       command: ["python", "manage.py", "catalog_consumer"]
+#       replicas: 1
+consumers: []
+
 podSecurityContext:
   runAsNonRoot: true
   runAsUser: 10001
